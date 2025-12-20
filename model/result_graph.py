@@ -1,8 +1,12 @@
 import os
 import re
+import sys
 
 import matplotlib.pyplot as plt
 import pandas as pd
+
+python_env = sys.executable
+print(f"Python executable: {python_env}")
 
 # Path to the log file
 log_file_path = os.path.join(os.path.dirname(__file__), "..", "logs", "training.log")
