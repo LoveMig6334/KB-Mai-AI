@@ -1,0 +1,207 @@
+Start training...
+Training at epoch 1/50
+epoch: 0 lr: 0.00016666666666666666
+[0] loss: 0.70587
+Accuracy of the network on the val images: 96 %
+save model params to ./projects/kbmai_project_dcb9ds3uf/output/best_acc.pth
+Training at epoch 2/50
+epoch: 1 lr: 0.0003333333333333333
+[1] loss: 0.32097
+Accuracy of the network on the val images: 94 %
+Training at epoch 3/50
+epoch: 2 lr: 0.0005
+[2] loss: 0.33602
+Accuracy of the network on the val images: 93 %
+Training at epoch 4/50
+epoch: 3 lr: 0.0006666666666666666
+[3] loss: 0.30905
+Accuracy of the network on the val images: 73 %
+Training at epoch 5/50
+epoch: 4 lr: 0.0008333333333333334
+[4] loss: 0.47947
+Accuracy of the network on the val images: 67 %
+Training at epoch 6/50
+epoch: 5 lr: 0.001
+[5] loss: 0.41637
+Accuracy of the network on the val images: 86 %
+Training at epoch 7/50
+epoch: 6 lr: 0.001
+[6] loss: 0.35954
+Accuracy of the network on the val images: 92 %
+Training at epoch 8/50
+epoch: 7 lr: 0.001
+[7] loss: 0.39547
+Accuracy of the network on the val images: 79 %
+Training at epoch 9/50
+epoch: 8 lr: 0.001
+[8] loss: 0.33791
+Accuracy of the network on the val images: 99 %
+save model params to ./projects/kbmai_project_dcb9ds3uf/output/best_acc.pth
+Training at epoch 10/50
+epoch: 9 lr: 0.001
+[9] loss: 0.31598
+Accuracy of the network on the val images: 96 %
+Training at epoch 11/50
+epoch: 10 lr: 0.001
+[10] loss: 0.21853
+Accuracy of the network on the val images: 92 %
+Training at epoch 12/50
+epoch: 11 lr: 0.001
+[11] loss: 0.21796
+Accuracy of the network on the val images: 98 %
+Training at epoch 13/50
+epoch: 12 lr: 0.001
+[12] loss: 0.20338
+Accuracy of the network on the val images: 96 %
+Training at epoch 14/50
+epoch: 13 lr: 0.001
+[13] loss: 0.25783
+Accuracy of the network on the val images: 93 %
+Training at epoch 15/50
+epoch: 14 lr: 0.001
+[14] loss: 0.29856
+Accuracy of the network on the val images: 96 %
+Training at epoch 16/50
+epoch: 15 lr: 0.001
+[15] loss: 0.29493
+Accuracy of the network on the val images: 99 %
+Training at epoch 17/50
+epoch: 16 lr: 0.001
+[16] loss: 0.23062
+Accuracy of the network on the val images: 96 %
+Training at epoch 18/50
+epoch: 17 lr: 0.001
+[17] loss: 0.30180
+Accuracy of the network on the val images: 92 %
+Training at epoch 19/50
+epoch: 18 lr: 0.001
+[18] loss: 0.20247
+Accuracy of the network on the val images: 100 %
+save model params to ./projects/kbmai_project_dcb9ds3uf/output/best_acc.pth
+Training at epoch 20/50
+epoch: 19 lr: 0.001
+[19] loss: 0.24124
+Accuracy of the network on the val images: 94 %
+Training at epoch 21/50
+epoch: 20 lr: 0.001
+[20] loss: 0.20180
+Accuracy of the network on the val images: 99 %
+Training at epoch 22/50
+epoch: 21 lr: 0.001
+[21] loss: 0.16525
+Accuracy of the network on the val images: 94 %
+Training at epoch 23/50
+epoch: 22 lr: 0.001
+[22] loss: 0.23385
+Accuracy of the network on the val images: 99 %
+Training at epoch 24/50
+epoch: 23 lr: 0.001
+[23] loss: 0.27027
+Accuracy of the network on the val images: 88 %
+Training at epoch 25/50
+epoch: 24 lr: 0.001
+[24] loss: 0.33422
+Accuracy of the network on the val images: 96 %
+Training at epoch 26/50
+epoch: 25 lr: 0.001
+[25] loss: 0.24248
+Accuracy of the network on the val images: 93 %
+Training at epoch 27/50
+epoch: 26 lr: 0.001
+[26] loss: 0.25465
+Accuracy of the network on the val images: 96 %
+Training at epoch 28/50
+epoch: 27 lr: 0.001
+[27] loss: 0.25855
+Accuracy of the network on the val images: 94 %
+Training at epoch 29/50
+epoch: 28 lr: 0.001
+[28] loss: 0.22118
+Accuracy of the network on the val images: 94 %
+Training at epoch 30/50
+epoch: 29 lr: 0.001
+[29] loss: 0.24211
+Accuracy of the network on the val images: 100 %
+Training at epoch 31/50
+epoch: 30 lr: 0.001
+[30] loss: 0.22172
+Accuracy of the network on the val images: 99 %
+Training at epoch 32/50
+epoch: 31 lr: 0.001
+[31] loss: 0.19198
+Accuracy of the network on the val images: 96 %
+Training at epoch 33/50
+epoch: 32 lr: 0.001
+[32] loss: 0.21668
+Accuracy of the network on the val images: 99 %
+Training at epoch 34/50
+epoch: 33 lr: 0.001
+[33] loss: 0.17933
+Accuracy of the network on the val images: 93 %
+Training at epoch 35/50
+epoch: 34 lr: 0.001
+[34] loss: 0.19392
+Accuracy of the network on the val images: 99 %
+Training at epoch 36/50
+epoch: 35 lr: 0.001
+[35] loss: 0.20024
+Accuracy of the network on the val images: 96 %
+Training at epoch 37/50
+epoch: 36 lr: 0.001
+[36] loss: 0.15479
+Accuracy of the network on the val images: 98 %
+Training at epoch 38/50
+epoch: 37 lr: 0.001
+[37] loss: 0.17493
+Accuracy of the network on the val images: 95 %
+Training at epoch 39/50
+epoch: 38 lr: 0.001
+[38] loss: 0.22087
+Accuracy of the network on the val images: 99 %
+Training at epoch 40/50
+epoch: 39 lr: 0.001
+[39] loss: 0.20384
+Accuracy of the network on the val images: 98 %
+Training at epoch 41/50
+epoch: 40 lr: 0.001
+[40] loss: 0.15968
+Accuracy of the network on the val images: 98 %
+Training at epoch 42/50
+epoch: 41 lr: 0.001
+[41] loss: 0.22133
+Accuracy of the network on the val images: 93 %
+Training at epoch 43/50
+epoch: 42 lr: 0.001
+[42] loss: 0.25600
+Accuracy of the network on the val images: 99 %
+Training at epoch 44/50
+epoch: 43 lr: 0.001
+[43] loss: 0.17042
+Accuracy of the network on the val images: 97 %
+Training at epoch 45/50
+epoch: 44 lr: 0.001
+[44] loss: 0.18109
+Accuracy of the network on the val images: 99 %
+Training at epoch 46/50
+epoch: 45 lr: 0.001
+[45] loss: 0.19622
+Accuracy of the network on the val images: 93 %
+Training at epoch 47/50
+epoch: 46 lr: 0.001
+[46] loss: 0.24396
+Accuracy of the network on the val images: 98 %
+Training at epoch 48/50
+epoch: 47 lr: 0.001
+[47] loss: 0.19556
+Accuracy of the network on the val images: 96 %
+Training at epoch 49/50
+epoch: 48 lr: 0.001
+[48] loss: 0.25029
+Accuracy of the network on the val images: 97 %
+Training at epoch 50/50
+epoch: 49 lr: 0.001
+[49] loss: 0.19838
+Accuracy of the network on the val images: 99 %
+Finished Training
+Training is done
+Thread ended

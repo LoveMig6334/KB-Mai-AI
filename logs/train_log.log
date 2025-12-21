@@ -1,0 +1,1122 @@
+BACKEND : COLAB
+DEVICE : COLAB
+=== start tuna ===
+Initial TUNNEL ((====> [ https://tunnel-0de38adf-d209-4dde-b01c-a17d24e3fbf8.tuna-proxy.meca.in.th:8443 ] <====))
+ * Serving Flask app 'main'
+ * Debug mode: on
+>>> Hello! This is pagekite.py v1.5.2.201011.                   [CTRL+C = Stop]
+BACKEND : COLAB
+DEVICE : COLAB
+=== start tuna ===
+Initial TUNNEL ((====> [ https://tunnel-0de38adf-d209-4dde-b01c-a17d24e3fbf8.tuna-proxy.meca.in.th:8443 ] <====))
+WARNING:werkzeug: * Debugger is active!
+    Connecting to front-end relay 43.208.21.82:80 ...                          
+     - Relay supports 3 protocols on 2 public ports.                           
+     - Raw TCP/IP (HTTP proxied) kites are available.                          
+     - To enable more logging, add option: --logfile=/path/to/logfile          
+    Quota: You have plenty of time and bandwidth left.                         
+~<> Flying localhost:5000 as http://www.tunnel-0de38adf-d209-4dde-b01c-a17d24e3fbf8.tuna.meca.in.th/
+>>> Hello! This is pagekite.py v1.5.2.201011.                   [CTRL+C = Stop]
+    Connecting to front-end relay 43.208.21.82:80 ...                          
+     - Relay supports 3 protocols on 2 public ports.                           
+     - Raw TCP/IP (HTTP proxied) kites are available.                          
+     - To enable more logging, add option: --logfile=/path/to/logfile          
+!!! REJECTED: http:www.tunnel-0de38adf-d209-4dde-b01c-a17d24e3fbf8.tuna.meca.in.th (duplicate)
+    172.19.0.2 < http://www.tunnel-0de38adf-d209-4dde-b01c-a17d24e3fbf8.tuna.meca.in.th:80 (localhost:5000)
+start training process
+use cuda
+----------------------------------------------------------
+Loading the dataset...
+Project label: ['bg', 'can', 'drink', 'pet', 'taobin-paper']
+The number of classes: 5
+----------------------------------------------------------
+Building the model...
+model type: resnet18
+/usr/local/lib/python3.11/dist-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Downloading: "https://download.pytorch.org/models/resnet18-f37072fd.pth" to /root/.cache/torch/hub/checkpoints/resnet18-f37072fd.pth
+100% 44.7M/44.7M [00:00<00:00, 208MB/s]
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1         [-1, 64, 112, 112]           9,408
+       BatchNorm2d-2         [-1, 64, 112, 112]             128
+              ReLU-3         [-1, 64, 112, 112]               0
+         MaxPool2d-4           [-1, 64, 56, 56]               0
+            Conv2d-5           [-1, 64, 56, 56]          36,864
+       BatchNorm2d-6           [-1, 64, 56, 56]             128
+              ReLU-7           [-1, 64, 56, 56]               0
+            Conv2d-8           [-1, 64, 56, 56]          36,864
+       BatchNorm2d-9           [-1, 64, 56, 56]             128
+             ReLU-10           [-1, 64, 56, 56]               0
+       BasicBlock-11           [-1, 64, 56, 56]               0
+           Conv2d-12           [-1, 64, 56, 56]          36,864
+      BatchNorm2d-13           [-1, 64, 56, 56]             128
+             ReLU-14           [-1, 64, 56, 56]               0
+           Conv2d-15           [-1, 64, 56, 56]          36,864
+      BatchNorm2d-16           [-1, 64, 56, 56]             128
+             ReLU-17           [-1, 64, 56, 56]               0
+       BasicBlock-18           [-1, 64, 56, 56]               0
+           Conv2d-19          [-1, 128, 28, 28]          73,728
+      BatchNorm2d-20          [-1, 128, 28, 28]             256
+             ReLU-21          [-1, 128, 28, 28]               0
+           Conv2d-22          [-1, 128, 28, 28]         147,456
+      BatchNorm2d-23          [-1, 128, 28, 28]             256
+           Conv2d-24          [-1, 128, 28, 28]           8,192
+      BatchNorm2d-25          [-1, 128, 28, 28]             256
+             ReLU-26          [-1, 128, 28, 28]               0
+       BasicBlock-27          [-1, 128, 28, 28]               0
+           Conv2d-28          [-1, 128, 28, 28]         147,456
+      BatchNorm2d-29          [-1, 128, 28, 28]             256
+             ReLU-30          [-1, 128, 28, 28]               0
+           Conv2d-31          [-1, 128, 28, 28]         147,456
+      BatchNorm2d-32          [-1, 128, 28, 28]             256
+             ReLU-33          [-1, 128, 28, 28]               0
+       BasicBlock-34          [-1, 128, 28, 28]               0
+           Conv2d-35          [-1, 256, 14, 14]         294,912
+      BatchNorm2d-36          [-1, 256, 14, 14]             512
+             ReLU-37          [-1, 256, 14, 14]               0
+           Conv2d-38          [-1, 256, 14, 14]         589,824
+      BatchNorm2d-39          [-1, 256, 14, 14]             512
+           Conv2d-40          [-1, 256, 14, 14]          32,768
+      BatchNorm2d-41          [-1, 256, 14, 14]             512
+             ReLU-42          [-1, 256, 14, 14]               0
+       BasicBlock-43          [-1, 256, 14, 14]               0
+           Conv2d-44          [-1, 256, 14, 14]         589,824
+      BatchNorm2d-45          [-1, 256, 14, 14]             512
+             ReLU-46          [-1, 256, 14, 14]               0
+           Conv2d-47          [-1, 256, 14, 14]         589,824
+      BatchNorm2d-48          [-1, 256, 14, 14]             512
+             ReLU-49          [-1, 256, 14, 14]               0
+       BasicBlock-50          [-1, 256, 14, 14]               0
+           Conv2d-51            [-1, 512, 7, 7]       1,179,648
+      BatchNorm2d-52            [-1, 512, 7, 7]           1,024
+             ReLU-53            [-1, 512, 7, 7]               0
+           Conv2d-54            [-1, 512, 7, 7]       2,359,296
+      BatchNorm2d-55            [-1, 512, 7, 7]           1,024
+           Conv2d-56            [-1, 512, 7, 7]         131,072
+      BatchNorm2d-57            [-1, 512, 7, 7]           1,024
+             ReLU-58            [-1, 512, 7, 7]               0
+       BasicBlock-59            [-1, 512, 7, 7]               0
+           Conv2d-60            [-1, 512, 7, 7]       2,359,296
+      BatchNorm2d-61            [-1, 512, 7, 7]           1,024
+             ReLU-62            [-1, 512, 7, 7]               0
+           Conv2d-63            [-1, 512, 7, 7]       2,359,296
+      BatchNorm2d-64            [-1, 512, 7, 7]           1,024
+             ReLU-65            [-1, 512, 7, 7]               0
+       BasicBlock-66            [-1, 512, 7, 7]               0
+AdaptiveAvgPool2d-67            [-1, 512, 1, 1]               0
+           Linear-68                    [-1, 5]           2,565
+================================================================
+Total params: 11,179,077
+Trainable params: 11,179,077
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.57
+Forward/backward pass size (MB): 62.79
+Params size (MB): 42.64
+Estimated Total Size (MB): 106.00
+----------------------------------------------------------------
+----------------------------------------------------------
+Start training...
+Training at epoch 1/100
+epoch: 0 lr: 0.00016666666666666666
+[0] loss: 0.73493
+Accuracy of the network on the val images: 95 %
+save model params to ./projects/kbmai_project_dcb9ds3uf/output/best_acc.pth
+Training at epoch 2/100
+epoch: 1 lr: 0.0003333333333333333
+[1] loss: 0.34015
+Accuracy of the network on the val images: 96 %
+save model params to ./projects/kbmai_project_dcb9ds3uf/output/best_acc.pth
+Training at epoch 3/100
+epoch: 2 lr: 0.0005
+[2] loss: 0.32857
+Accuracy of the network on the val images: 92 %
+Training at epoch 4/100
+epoch: 3 lr: 0.0006666666666666666
+[3] loss: 0.33395
+Accuracy of the network on the val images: 89 %
+Training at epoch 5/100
+epoch: 4 lr: 0.0008333333333333334
+[4] loss: 0.40628
+Accuracy of the network on the val images: 85 %
+Training at epoch 6/100
+epoch: 5 lr: 0.001
+[5] loss: 0.36356
+Accuracy of the network on the val images: 96 %
+Training at epoch 7/100
+epoch: 6 lr: 0.001
+[6] loss: 0.31531
+Accuracy of the network on the val images: 99 %
+save model params to ./projects/kbmai_project_dcb9ds3uf/output/best_acc.pth
+Training at epoch 8/100
+epoch: 7 lr: 0.001
+[7] loss: 0.28278
+Accuracy of the network on the val images: 95 %
+Training at epoch 9/100
+epoch: 8 lr: 0.001
+[8] loss: 0.26599
+Accuracy of the network on the val images: 89 %
+Training at epoch 10/100
+epoch: 9 lr: 0.001
+[9] loss: 0.37804
+Accuracy of the network on the val images: 93 %
+Training at epoch 11/100
+epoch: 10 lr: 0.001
+[10] loss: 0.33592
+Accuracy of the network on the val images: 95 %
+Training at epoch 12/100
+epoch: 11 lr: 0.001
+[11] loss: 0.29390
+Accuracy of the network on the val images: 95 %
+Training at epoch 13/100
+epoch: 12 lr: 0.001
+[12] loss: 0.25055
+Accuracy of the network on the val images: 98 %
+Training at epoch 14/100
+epoch: 13 lr: 0.001
+[13] loss: 0.24811
+Accuracy of the network on the val images: 95 %
+Training at epoch 15/100
+epoch: 14 lr: 0.001
+[14] loss: 0.27780
+Accuracy of the network on the val images: 100 %
+save model params to ./projects/kbmai_project_dcb9ds3uf/output/best_acc.pth
+Training at epoch 16/100
+epoch: 15 lr: 0.001
+[15] loss: 0.21781
+Accuracy of the network on the val images: 99 %
+Training at epoch 17/100
+epoch: 16 lr: 0.001
+[16] loss: 0.22964
+Accuracy of the network on the val images: 96 %
+Training at epoch 18/100
+epoch: 17 lr: 0.001
+[17] loss: 0.20535
+Accuracy of the network on the val images: 99 %
+Training at epoch 19/100
+epoch: 18 lr: 0.001
+[18] loss: 0.21227
+Accuracy of the network on the val images: 99 %
+Training at epoch 20/100
+epoch: 19 lr: 0.001
+[19] loss: 0.24065
+Accuracy of the network on the val images: 73 %
+Training at epoch 21/100
+epoch: 20 lr: 0.001
+[20] loss: 0.22342
+Accuracy of the network on the val images: 99 %
+Training at epoch 22/100
+epoch: 21 lr: 0.001
+[21] loss: 0.21114
+Accuracy of the network on the val images: 96 %
+Training at epoch 23/100
+epoch: 22 lr: 0.001
+[22] loss: 0.21887
+Accuracy of the network on the val images: 94 %
+Training at epoch 24/100
+epoch: 23 lr: 0.001
+[23] loss: 0.26189
+Accuracy of the network on the val images: 99 %
+Training at epoch 25/100
+epoch: 24 lr: 0.001
+[24] loss: 0.19548
+Accuracy of the network on the val images: 95 %
+Training at epoch 26/100
+epoch: 25 lr: 0.001
+[25] loss: 0.22145
+Accuracy of the network on the val images: 94 %
+Training at epoch 27/100
+epoch: 26 lr: 0.001
+[26] loss: 0.22518
+Accuracy of the network on the val images: 99 %
+Training at epoch 28/100
+epoch: 27 lr: 0.001
+[27] loss: 0.28677
+Accuracy of the network on the val images: 88 %
+Training at epoch 29/100
+epoch: 28 lr: 0.001
+[28] loss: 0.18431
+Accuracy of the network on the val images: 99 %
+Training at epoch 30/100
+epoch: 29 lr: 0.001
+[29] loss: 0.21629
+Accuracy of the network on the val images: 94 %
+Training at epoch 31/100
+epoch: 30 lr: 0.001
+[30] loss: 0.19761
+Accuracy of the network on the val images: 93 %
+Training at epoch 32/100
+epoch: 31 lr: 0.001
+[31] loss: 0.20495
+Accuracy of the network on the val images: 99 %
+Training at epoch 33/100
+epoch: 32 lr: 0.001
+[32] loss: 0.21847
+Accuracy of the network on the val images: 95 %
+Training at epoch 34/100
+epoch: 33 lr: 0.001
+[33] loss: 0.19785
+Accuracy of the network on the val images: 99 %
+Training at epoch 35/100
+epoch: 34 lr: 0.001
+[34] loss: 0.20249
+Accuracy of the network on the val images: 85 %
+Training at epoch 36/100
+epoch: 35 lr: 0.001
+[35] loss: 0.16315
+Accuracy of the network on the val images: 88 %
+Training at epoch 37/100
+epoch: 36 lr: 0.001
+[36] loss: 0.26063
+Accuracy of the network on the val images: 95 %
+Training at epoch 38/100
+epoch: 37 lr: 0.001
+[37] loss: 0.27877
+Accuracy of the network on the val images: 92 %
+Training at epoch 39/100
+epoch: 38 lr: 0.001
+[38] loss: 0.23382
+Accuracy of the network on the val images: 94 %
+Training at epoch 40/100
+epoch: 39 lr: 0.001
+[39] loss: 0.21430
+Accuracy of the network on the val images: 99 %
+Training at epoch 41/100
+epoch: 40 lr: 0.001
+[40] loss: 0.19135
+Accuracy of the network on the val images: 96 %
+Training at epoch 42/100
+epoch: 41 lr: 0.001
+[41] loss: 0.17232
+Accuracy of the network on the val images: 99 %
+Training at epoch 43/100
+epoch: 42 lr: 0.001
+[42] loss: 0.18990
+Accuracy of the network on the val images: 95 %
+Training at epoch 44/100
+epoch: 43 lr: 0.001
+[43] loss: 0.19915
+Accuracy of the network on the val images: 99 %
+Training at epoch 45/100
+epoch: 44 lr: 0.001
+[44] loss: 0.17948
+Accuracy of the network on the val images: 98 %
+Training at epoch 46/100
+epoch: 45 lr: 0.001
+[45] loss: 0.18821
+Accuracy of the network on the val images: 99 %
+Training at epoch 47/100
+epoch: 46 lr: 0.001
+[46] loss: 0.20765
+Accuracy of the network on the val images: 100 %
+Training at epoch 48/100
+epoch: 47 lr: 0.001
+[47] loss: 0.22914
+Accuracy of the network on the val images: 90 %
+Training at epoch 49/100
+epoch: 48 lr: 0.001
+[48] loss: 0.21070
+Accuracy of the network on the val images: 96 %
+Training at epoch 50/100
+epoch: 49 lr: 0.001
+[49] loss: 0.20339
+Accuracy of the network on the val images: 99 %
+Training at epoch 51/100
+epoch: 50 lr: 0.001
+[50] loss: 0.18906
+Accuracy of the network on the val images: 99 %
+Training at epoch 52/100
+epoch: 51 lr: 0.001
+[51] loss: 0.21428
+Accuracy of the network on the val images: 97 %
+Training at epoch 53/100
+epoch: 52 lr: 0.001
+[52] loss: 0.22806
+Accuracy of the network on the val images: 99 %
+Training at epoch 54/100
+epoch: 53 lr: 0.001
+[53] loss: 0.18311
+Accuracy of the network on the val images: 99 %
+Training at epoch 55/100
+epoch: 54 lr: 0.001
+[54] loss: 0.21793
+Accuracy of the network on the val images: 100 %
+Training at epoch 56/100
+epoch: 55 lr: 0.001
+[55] loss: 0.18402
+Accuracy of the network on the val images: 96 %
+Training at epoch 57/100
+epoch: 56 lr: 0.001
+[56] loss: 0.25620
+Accuracy of the network on the val images: 96 %
+Training at epoch 58/100
+epoch: 57 lr: 0.001
+[57] loss: 0.26116
+Accuracy of the network on the val images: 97 %
+Training at epoch 59/100
+epoch: 58 lr: 0.001
+[58] loss: 0.22803
+Accuracy of the network on the val images: 99 %
+Training at epoch 60/100
+epoch: 59 lr: 0.001
+[59] loss: 0.15378
+Accuracy of the network on the val images: 100 %
+Training at epoch 61/100
+epoch: 60 lr: 0.001
+[60] loss: 0.16857
+Accuracy of the network on the val images: 99 %
+Training at epoch 62/100
+epoch: 61 lr: 0.001
+[61] loss: 0.18853
+Accuracy of the network on the val images: 99 %
+Training at epoch 63/100
+epoch: 62 lr: 0.001
+[62] loss: 0.16811
+Accuracy of the network on the val images: 96 %
+Training at epoch 64/100
+epoch: 63 lr: 0.001
+[63] loss: 0.20798
+Accuracy of the network on the val images: 100 %
+Training at epoch 65/100
+epoch: 64 lr: 0.001
+[64] loss: 0.20562
+Accuracy of the network on the val images: 99 %
+Training at epoch 66/100
+epoch: 65 lr: 0.001
+[65] loss: 0.18781
+Accuracy of the network on the val images: 99 %
+Training at epoch 67/100
+epoch: 66 lr: 0.001
+[66] loss: 0.17068
+Accuracy of the network on the val images: 97 %
+Training at epoch 68/100
+epoch: 67 lr: 0.001
+[67] loss: 0.18334
+Accuracy of the network on the val images: 100 %
+Training at epoch 69/100
+epoch: 68 lr: 0.001
+[68] loss: 0.21199
+Accuracy of the network on the val images: 99 %
+Training at epoch 70/100
+epoch: 69 lr: 0.001
+[69] loss: 0.21499
+Accuracy of the network on the val images: 98 %
+Training at epoch 71/100
+epoch: 70 lr: 0.001
+[70] loss: 0.13901
+Accuracy of the network on the val images: 98 %
+Training at epoch 72/100
+epoch: 71 lr: 0.001
+[71] loss: 0.17649
+Accuracy of the network on the val images: 98 %
+Training at epoch 73/100
+epoch: 72 lr: 0.001
+[72] loss: 0.15991
+Accuracy of the network on the val images: 98 %
+Training at epoch 74/100
+epoch: 73 lr: 0.001
+[73] loss: 0.21717
+Accuracy of the network on the val images: 98 %
+Training at epoch 75/100
+epoch: 74 lr: 0.001
+[74] loss: 0.19739
+Accuracy of the network on the val images: 97 %
+Training at epoch 76/100
+epoch: 75 lr: 0.001
+[75] loss: 0.16260
+Accuracy of the network on the val images: 100 %
+Training at epoch 77/100
+epoch: 76 lr: 0.001
+[76] loss: 0.19899
+Accuracy of the network on the val images: 94 %
+Training at epoch 78/100
+epoch: 77 lr: 0.001
+[77] loss: 0.16776
+Accuracy of the network on the val images: 98 %
+Training at epoch 79/100
+epoch: 78 lr: 0.001
+[78] loss: 0.15346
+Accuracy of the network on the val images: 100 %
+Training at epoch 80/100
+epoch: 79 lr: 0.001
+[79] loss: 0.17063
+Accuracy of the network on the val images: 96 %
+Training at epoch 81/100
+epoch: 80 lr: 0.001
+[80] loss: 0.19531
+Accuracy of the network on the val images: 99 %
+Training at epoch 82/100
+epoch: 81 lr: 0.001
+[81] loss: 0.16218
+Accuracy of the network on the val images: 99 %
+Training at epoch 83/100
+epoch: 82 lr: 0.001
+[82] loss: 0.16273
+Accuracy of the network on the val images: 98 %
+Training at epoch 84/100
+epoch: 83 lr: 0.001
+[83] loss: 0.15833
+Accuracy of the network on the val images: 90 %
+Training at epoch 85/100
+epoch: 84 lr: 0.001
+[84] loss: 0.23493
+Accuracy of the network on the val images: 100 %
+Training at epoch 86/100
+epoch: 85 lr: 0.001
+[85] loss: 0.18432
+Accuracy of the network on the val images: 99 %
+Training at epoch 87/100
+epoch: 86 lr: 0.001
+[86] loss: 0.17008
+Accuracy of the network on the val images: 99 %
+Training at epoch 88/100
+epoch: 87 lr: 0.001
+[87] loss: 0.15945
+Accuracy of the network on the val images: 98 %
+Training at epoch 89/100
+epoch: 88 lr: 0.001
+[88] loss: 0.14664
+Accuracy of the network on the val images: 98 %
+Training at epoch 90/100
+epoch: 89 lr: 0.001
+[89] loss: 0.19343
+Accuracy of the network on the val images: 99 %
+Training at epoch 91/100
+epoch: 90 lr: 0.001
+[90] loss: 0.18183
+Accuracy of the network on the val images: 98 %
+Training at epoch 92/100
+epoch: 91 lr: 0.001
+[91] loss: 0.22452
+Accuracy of the network on the val images: 100 %
+Training at epoch 93/100
+epoch: 92 lr: 0.001
+[92] loss: 0.18929
+Accuracy of the network on the val images: 98 %
+Training at epoch 94/100
+epoch: 93 lr: 0.001
+[93] loss: 0.14853
+Accuracy of the network on the val images: 97 %
+Training at epoch 95/100
+epoch: 94 lr: 0.001
+[94] loss: 0.14898
+Accuracy of the network on the val images: 100 %
+Training at epoch 96/100
+epoch: 95 lr: 0.001
+[95] loss: 0.15523
+Accuracy of the network on the val images: 97 %
+Training at epoch 97/100
+epoch: 96 lr: 0.001
+[96] loss: 0.16045
+Accuracy of the network on the val images: 98 %
+Training at epoch 98/100
+epoch: 97 lr: 0.001
+[97] loss: 0.16156
+Accuracy of the network on the val images: 100 %
+Training at epoch 99/100
+epoch: 98 lr: 0.001
+[98] loss: 0.18002
+Accuracy of the network on the val images: 92 %
+Training at epoch 100/100
+epoch: 99 lr: 0.001
+[99] loss: 0.19306
+Accuracy of the network on the val images: 95 %
+Finished Training
+Training is done
+Thread ended
+start training process
+use cuda
+----------------------------------------------------------
+Loading the dataset...
+Project label: ['bg', 'can', 'drink', 'pet', 'taobin-paper']
+The number of classes: 5
+----------------------------------------------------------
+Building the model...
+model type: resnet18
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1         [-1, 64, 112, 112]           9,408
+       BatchNorm2d-2         [-1, 64, 112, 112]             128
+              ReLU-3         [-1, 64, 112, 112]               0
+         MaxPool2d-4           [-1, 64, 56, 56]               0
+            Conv2d-5           [-1, 64, 56, 56]          36,864
+       BatchNorm2d-6           [-1, 64, 56, 56]             128
+              ReLU-7           [-1, 64, 56, 56]               0
+            Conv2d-8           [-1, 64, 56, 56]          36,864
+       BatchNorm2d-9           [-1, 64, 56, 56]             128
+             ReLU-10           [-1, 64, 56, 56]               0
+       BasicBlock-11           [-1, 64, 56, 56]               0
+           Conv2d-12           [-1, 64, 56, 56]          36,864
+      BatchNorm2d-13           [-1, 64, 56, 56]             128
+             ReLU-14           [-1, 64, 56, 56]               0
+           Conv2d-15           [-1, 64, 56, 56]          36,864
+      BatchNorm2d-16           [-1, 64, 56, 56]             128
+             ReLU-17           [-1, 64, 56, 56]               0
+       BasicBlock-18           [-1, 64, 56, 56]               0
+           Conv2d-19          [-1, 128, 28, 28]          73,728
+      BatchNorm2d-20          [-1, 128, 28, 28]             256
+             ReLU-21          [-1, 128, 28, 28]               0
+           Conv2d-22          [-1, 128, 28, 28]         147,456
+      BatchNorm2d-23          [-1, 128, 28, 28]             256
+           Conv2d-24          [-1, 128, 28, 28]           8,192
+      BatchNorm2d-25          [-1, 128, 28, 28]             256
+             ReLU-26          [-1, 128, 28, 28]               0
+       BasicBlock-27          [-1, 128, 28, 28]               0
+           Conv2d-28          [-1, 128, 28, 28]         147,456
+      BatchNorm2d-29          [-1, 128, 28, 28]             256
+             ReLU-30          [-1, 128, 28, 28]               0
+           Conv2d-31          [-1, 128, 28, 28]         147,456
+      BatchNorm2d-32          [-1, 128, 28, 28]             256
+             ReLU-33          [-1, 128, 28, 28]               0
+       BasicBlock-34          [-1, 128, 28, 28]               0
+           Conv2d-35          [-1, 256, 14, 14]         294,912
+      BatchNorm2d-36          [-1, 256, 14, 14]             512
+             ReLU-37          [-1, 256, 14, 14]               0
+           Conv2d-38          [-1, 256, 14, 14]         589,824
+      BatchNorm2d-39          [-1, 256, 14, 14]             512
+           Conv2d-40          [-1, 256, 14, 14]          32,768
+      BatchNorm2d-41          [-1, 256, 14, 14]             512
+             ReLU-42          [-1, 256, 14, 14]               0
+       BasicBlock-43          [-1, 256, 14, 14]               0
+           Conv2d-44          [-1, 256, 14, 14]         589,824
+      BatchNorm2d-45          [-1, 256, 14, 14]             512
+             ReLU-46          [-1, 256, 14, 14]               0
+           Conv2d-47          [-1, 256, 14, 14]         589,824
+      BatchNorm2d-48          [-1, 256, 14, 14]             512
+             ReLU-49          [-1, 256, 14, 14]               0
+       BasicBlock-50          [-1, 256, 14, 14]               0
+           Conv2d-51            [-1, 512, 7, 7]       1,179,648
+      BatchNorm2d-52            [-1, 512, 7, 7]           1,024
+             ReLU-53            [-1, 512, 7, 7]               0
+           Conv2d-54            [-1, 512, 7, 7]       2,359,296
+      BatchNorm2d-55            [-1, 512, 7, 7]           1,024
+           Conv2d-56            [-1, 512, 7, 7]         131,072
+      BatchNorm2d-57            [-1, 512, 7, 7]           1,024
+             ReLU-58            [-1, 512, 7, 7]               0
+       BasicBlock-59            [-1, 512, 7, 7]               0
+           Conv2d-60            [-1, 512, 7, 7]       2,359,296
+      BatchNorm2d-61            [-1, 512, 7, 7]           1,024
+             ReLU-62            [-1, 512, 7, 7]               0
+           Conv2d-63            [-1, 512, 7, 7]       2,359,296
+      BatchNorm2d-64            [-1, 512, 7, 7]           1,024
+             ReLU-65            [-1, 512, 7, 7]               0
+       BasicBlock-66            [-1, 512, 7, 7]               0
+AdaptiveAvgPool2d-67            [-1, 512, 1, 1]               0
+           Linear-68                    [-1, 5]           2,565
+================================================================
+Total params: 11,179,077
+Trainable params: 11,179,077
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.57
+Forward/backward pass size (MB): 62.79
+Params size (MB): 42.64
+Estimated Total Size (MB): 106.00
+----------------------------------------------------------------
+----------------------------------------------------------
+Start training...
+Training at epoch 1/50
+epoch: 0 lr: 0.00016666666666666666
+[0] loss: 0.70587
+Accuracy of the network on the val images: 96 %
+save model params to ./projects/kbmai_project_dcb9ds3uf/output/best_acc.pth
+Training at epoch 2/50
+epoch: 1 lr: 0.0003333333333333333
+[1] loss: 0.32097
+Accuracy of the network on the val images: 94 %
+Training at epoch 3/50
+epoch: 2 lr: 0.0005
+[2] loss: 0.33602
+Accuracy of the network on the val images: 93 %
+Training at epoch 4/50
+epoch: 3 lr: 0.0006666666666666666
+[3] loss: 0.30905
+Accuracy of the network on the val images: 73 %
+Training at epoch 5/50
+epoch: 4 lr: 0.0008333333333333334
+[4] loss: 0.47947
+Accuracy of the network on the val images: 67 %
+Training at epoch 6/50
+epoch: 5 lr: 0.001
+[5] loss: 0.41637
+Accuracy of the network on the val images: 86 %
+Training at epoch 7/50
+epoch: 6 lr: 0.001
+[6] loss: 0.35954
+Accuracy of the network on the val images: 92 %
+Training at epoch 8/50
+epoch: 7 lr: 0.001
+[7] loss: 0.39547
+Accuracy of the network on the val images: 79 %
+Training at epoch 9/50
+epoch: 8 lr: 0.001
+[8] loss: 0.33791
+Accuracy of the network on the val images: 99 %
+save model params to ./projects/kbmai_project_dcb9ds3uf/output/best_acc.pth
+Training at epoch 10/50
+epoch: 9 lr: 0.001
+[9] loss: 0.31598
+Accuracy of the network on the val images: 96 %
+Training at epoch 11/50
+epoch: 10 lr: 0.001
+[10] loss: 0.21853
+Accuracy of the network on the val images: 92 %
+Training at epoch 12/50
+epoch: 11 lr: 0.001
+[11] loss: 0.21796
+Accuracy of the network on the val images: 98 %
+Training at epoch 13/50
+epoch: 12 lr: 0.001
+[12] loss: 0.20338
+Accuracy of the network on the val images: 96 %
+Training at epoch 14/50
+epoch: 13 lr: 0.001
+[13] loss: 0.25783
+Accuracy of the network on the val images: 93 %
+Training at epoch 15/50
+epoch: 14 lr: 0.001
+[14] loss: 0.29856
+Accuracy of the network on the val images: 96 %
+Training at epoch 16/50
+epoch: 15 lr: 0.001
+[15] loss: 0.29493
+Accuracy of the network on the val images: 99 %
+Training at epoch 17/50
+epoch: 16 lr: 0.001
+[16] loss: 0.23062
+Accuracy of the network on the val images: 96 %
+Training at epoch 18/50
+epoch: 17 lr: 0.001
+[17] loss: 0.30180
+Accuracy of the network on the val images: 92 %
+Training at epoch 19/50
+epoch: 18 lr: 0.001
+[18] loss: 0.20247
+Accuracy of the network on the val images: 100 %
+save model params to ./projects/kbmai_project_dcb9ds3uf/output/best_acc.pth
+Training at epoch 20/50
+epoch: 19 lr: 0.001
+[19] loss: 0.24124
+Accuracy of the network on the val images: 94 %
+Training at epoch 21/50
+epoch: 20 lr: 0.001
+[20] loss: 0.20180
+Accuracy of the network on the val images: 99 %
+Training at epoch 22/50
+epoch: 21 lr: 0.001
+[21] loss: 0.16525
+Accuracy of the network on the val images: 94 %
+Training at epoch 23/50
+epoch: 22 lr: 0.001
+[22] loss: 0.23385
+Accuracy of the network on the val images: 99 %
+Training at epoch 24/50
+epoch: 23 lr: 0.001
+[23] loss: 0.27027
+Accuracy of the network on the val images: 88 %
+Training at epoch 25/50
+epoch: 24 lr: 0.001
+[24] loss: 0.33422
+Accuracy of the network on the val images: 96 %
+Training at epoch 26/50
+epoch: 25 lr: 0.001
+[25] loss: 0.24248
+Accuracy of the network on the val images: 93 %
+Training at epoch 27/50
+epoch: 26 lr: 0.001
+[26] loss: 0.25465
+Accuracy of the network on the val images: 96 %
+Training at epoch 28/50
+epoch: 27 lr: 0.001
+[27] loss: 0.25855
+Accuracy of the network on the val images: 94 %
+Training at epoch 29/50
+epoch: 28 lr: 0.001
+[28] loss: 0.22118
+Accuracy of the network on the val images: 94 %
+Training at epoch 30/50
+epoch: 29 lr: 0.001
+[29] loss: 0.24211
+Accuracy of the network on the val images: 100 %
+Training at epoch 31/50
+epoch: 30 lr: 0.001
+[30] loss: 0.22172
+Accuracy of the network on the val images: 99 %
+Training at epoch 32/50
+epoch: 31 lr: 0.001
+[31] loss: 0.19198
+Accuracy of the network on the val images: 96 %
+Training at epoch 33/50
+epoch: 32 lr: 0.001
+[32] loss: 0.21668
+Accuracy of the network on the val images: 99 %
+Training at epoch 34/50
+epoch: 33 lr: 0.001
+[33] loss: 0.17933
+Accuracy of the network on the val images: 93 %
+Training at epoch 35/50
+epoch: 34 lr: 0.001
+[34] loss: 0.19392
+Accuracy of the network on the val images: 99 %
+Training at epoch 36/50
+epoch: 35 lr: 0.001
+[35] loss: 0.20024
+Accuracy of the network on the val images: 96 %
+Training at epoch 37/50
+epoch: 36 lr: 0.001
+[36] loss: 0.15479
+Accuracy of the network on the val images: 98 %
+Training at epoch 38/50
+epoch: 37 lr: 0.001
+[37] loss: 0.17493
+Accuracy of the network on the val images: 95 %
+Training at epoch 39/50
+epoch: 38 lr: 0.001
+[38] loss: 0.22087
+Accuracy of the network on the val images: 99 %
+Training at epoch 40/50
+epoch: 39 lr: 0.001
+[39] loss: 0.20384
+Accuracy of the network on the val images: 98 %
+Training at epoch 41/50
+epoch: 40 lr: 0.001
+[40] loss: 0.15968
+Accuracy of the network on the val images: 98 %
+Training at epoch 42/50
+epoch: 41 lr: 0.001
+[41] loss: 0.22133
+Accuracy of the network on the val images: 93 %
+Training at epoch 43/50
+epoch: 42 lr: 0.001
+[42] loss: 0.25600
+Accuracy of the network on the val images: 99 %
+Training at epoch 44/50
+epoch: 43 lr: 0.001
+[43] loss: 0.17042
+Accuracy of the network on the val images: 97 %
+Training at epoch 45/50
+epoch: 44 lr: 0.001
+[44] loss: 0.18109
+Accuracy of the network on the val images: 99 %
+Training at epoch 46/50
+epoch: 45 lr: 0.001
+[45] loss: 0.19622
+Accuracy of the network on the val images: 93 %
+Training at epoch 47/50
+epoch: 46 lr: 0.001
+[46] loss: 0.24396
+Accuracy of the network on the val images: 98 %
+Training at epoch 48/50
+epoch: 47 lr: 0.001
+[47] loss: 0.19556
+Accuracy of the network on the val images: 96 %
+Training at epoch 49/50
+epoch: 48 lr: 0.001
+[48] loss: 0.25029
+Accuracy of the network on the val images: 97 %
+Training at epoch 50/50
+epoch: 49 lr: 0.001
+[49] loss: 0.19838
+Accuracy of the network on the val images: 99 %
+Finished Training
+Training is done
+Thread ended
+/usr/local/lib/python3.11/dist-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+Finished loading model!
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1         [-1, 64, 112, 112]           9,408
+       BatchNorm2d-2         [-1, 64, 112, 112]             128
+              ReLU-3         [-1, 64, 112, 112]               0
+         MaxPool2d-4           [-1, 64, 56, 56]               0
+            Conv2d-5           [-1, 64, 56, 56]          36,864
+       BatchNorm2d-6           [-1, 64, 56, 56]             128
+              ReLU-7           [-1, 64, 56, 56]               0
+            Conv2d-8           [-1, 64, 56, 56]          36,864
+       BatchNorm2d-9           [-1, 64, 56, 56]             128
+             ReLU-10           [-1, 64, 56, 56]               0
+       BasicBlock-11           [-1, 64, 56, 56]               0
+           Conv2d-12           [-1, 64, 56, 56]          36,864
+      BatchNorm2d-13           [-1, 64, 56, 56]             128
+             ReLU-14           [-1, 64, 56, 56]               0
+           Conv2d-15           [-1, 64, 56, 56]          36,864
+      BatchNorm2d-16           [-1, 64, 56, 56]             128
+             ReLU-17           [-1, 64, 56, 56]               0
+       BasicBlock-18           [-1, 64, 56, 56]               0
+           Conv2d-19          [-1, 128, 28, 28]          73,728
+      BatchNorm2d-20          [-1, 128, 28, 28]             256
+             ReLU-21          [-1, 128, 28, 28]               0
+           Conv2d-22          [-1, 128, 28, 28]         147,456
+      BatchNorm2d-23          [-1, 128, 28, 28]             256
+           Conv2d-24          [-1, 128, 28, 28]           8,192
+      BatchNorm2d-25          [-1, 128, 28, 28]             256
+             ReLU-26          [-1, 128, 28, 28]               0
+       BasicBlock-27          [-1, 128, 28, 28]               0
+           Conv2d-28          [-1, 128, 28, 28]         147,456
+      BatchNorm2d-29          [-1, 128, 28, 28]             256
+             ReLU-30          [-1, 128, 28, 28]               0
+           Conv2d-31          [-1, 128, 28, 28]         147,456
+      BatchNorm2d-32          [-1, 128, 28, 28]             256
+             ReLU-33          [-1, 128, 28, 28]               0
+       BasicBlock-34          [-1, 128, 28, 28]               0
+           Conv2d-35          [-1, 256, 14, 14]         294,912
+      BatchNorm2d-36          [-1, 256, 14, 14]             512
+             ReLU-37          [-1, 256, 14, 14]               0
+           Conv2d-38          [-1, 256, 14, 14]         589,824
+      BatchNorm2d-39          [-1, 256, 14, 14]             512
+           Conv2d-40          [-1, 256, 14, 14]          32,768
+      BatchNorm2d-41          [-1, 256, 14, 14]             512
+             ReLU-42          [-1, 256, 14, 14]               0
+       BasicBlock-43          [-1, 256, 14, 14]               0
+           Conv2d-44          [-1, 256, 14, 14]         589,824
+      BatchNorm2d-45          [-1, 256, 14, 14]             512
+             ReLU-46          [-1, 256, 14, 14]               0
+           Conv2d-47          [-1, 256, 14, 14]         589,824
+      BatchNorm2d-48          [-1, 256, 14, 14]             512
+             ReLU-49          [-1, 256, 14, 14]               0
+       BasicBlock-50          [-1, 256, 14, 14]               0
+           Conv2d-51            [-1, 512, 7, 7]       1,179,648
+      BatchNorm2d-52            [-1, 512, 7, 7]           1,024
+             ReLU-53            [-1, 512, 7, 7]               0
+           Conv2d-54            [-1, 512, 7, 7]       2,359,296
+      BatchNorm2d-55            [-1, 512, 7, 7]           1,024
+           Conv2d-56            [-1, 512, 7, 7]         131,072
+      BatchNorm2d-57            [-1, 512, 7, 7]           1,024
+             ReLU-58            [-1, 512, 7, 7]               0
+       BasicBlock-59            [-1, 512, 7, 7]               0
+           Conv2d-60            [-1, 512, 7, 7]       2,359,296
+      BatchNorm2d-61            [-1, 512, 7, 7]           1,024
+             ReLU-62            [-1, 512, 7, 7]               0
+           Conv2d-63            [-1, 512, 7, 7]       2,359,296
+      BatchNorm2d-64            [-1, 512, 7, 7]           1,024
+             ReLU-65            [-1, 512, 7, 7]               0
+       BasicBlock-66            [-1, 512, 7, 7]               0
+AdaptiveAvgPool2d-67            [-1, 512, 1, 1]               0
+           Linear-68                    [-1, 5]           2,565
+================================================================
+Total params: 11,179,077
+Trainable params: 11,179,077
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.57
+Forward/backward pass size (MB): 62.79
+Params size (MB): 42.64
+Estimated Total Size (MB): 106.00
+----------------------------------------------------------------
+input shape: torch.Size([1, 3, 224, 224])
+export onnx ok
+convert end, ctrl-c to exit
+--- Sipeed NN  v0.9.6 --- 
+eliminate_flatten_after_global_pooling /avgpool/GlobalAveragePool /Flatten
+shape_inference
+>> end of optimization.
+--- Sipeed NN  v0.9.6 --- 
+--- SPNN Calibration Tool --- 17:11:18 Jun 10 2021
+====> Quantize the parameters.
+====> Quantize the activations.
+    ====> step 1 : find the max values.
+    ====>          total_images : 24.
+    ====> step 2 : generate the histogram_intervals.
+/layer4/layer4.1/relu_1/Relu_output_0    : max = 12.578114       interval = 0.006142  
+input0                                   : max = 0.996094        interval = 0.000486  
+/Flatten_output_0                        : max = 3.703423        interval = 0.001808  
+/maxpool/MaxPool_output_0_splitncnn_0    : max = 5.041811        interval = 0.002462  
+/layer1/layer1.0/conv2/Conv_output_0     : max = 3.613221        interval = 0.001764  
+/maxpool/MaxPool_output_0_splitncnn_1    : max = 5.041811        interval = 0.002462  
+/layer1/layer1.0/relu/Relu_output_0      : max = 2.629722        interval = 0.001284  
+/layer1/layer1.0/conv1/Conv_output_0     : max = 6.277900        interval = 0.003065  
+/layer1/layer1.0/Add_output_0            : max = 5.109410        interval = 0.002495  
+/layer1/layer1.0/relu_1/Relu_output_0_splitncnn_0 : max = 5.109410        interval = 0.002495  
+/layer1/layer1.1/conv2/Conv_output_0     : max = 4.737033        interval = 0.002313  
+/layer1/layer1.0/relu_1/Relu_output_0_splitncnn_1 : max = 5.109410        interval = 0.002495  
+/layer1/layer1.1/relu/Relu_output_0      : max = 3.154620        interval = 0.001540  
+/layer1/layer1.1/conv1/Conv_output_0     : max = 3.546631        interval = 0.001732  
+/layer1/layer1.1/Add_output_0            : max = 6.679224        interval = 0.003261  
+/layer2/layer2.0/conv2/Conv_output_0     : max = 6.228798        interval = 0.003041  
+/layer2/layer2.0/downsample/downsample.0/Conv_output_0 : max = 4.481349        interval = 0.002188  
+/layer1/layer1.1/relu_1/Relu_output_0_splitncnn_1 : max = 6.679224        interval = 0.003261  
+/layer2/layer2.0/relu/Relu_output_0      : max = 3.046487        interval = 0.001488  
+/layer1/layer1.1/relu_1/Relu_output_0_splitncnn_0 : max = 6.679224        interval = 0.003261  
+/layer2/layer2.0/conv1/Conv_output_0     : max = 3.107421        interval = 0.001517  
+/layer2/layer2.0/Add_output_0            : max = 7.236904        interval = 0.003534  
+/layer2/layer2.0/relu_1/Relu_output_0_splitncnn_0 : max = 7.236904        interval = 0.003534  
+/layer2/layer2.1/conv2/Conv_output_0     : max = 5.789870        interval = 0.002827  
+/layer2/layer2.0/relu_1/Relu_output_0_splitncnn_1 : max = 7.236904        interval = 0.003534  
+/layer2/layer2.1/relu/Relu_output_0      : max = 3.521111        interval = 0.001719  
+/layer2/layer2.1/conv1/Conv_output_0     : max = 3.816724        interval = 0.001864  
+/layer2/layer2.1/Add_output_0            : max = 9.469007        interval = 0.004624  
+/layer3/layer3.0/conv2/Conv_output_0     : max = 6.226449        interval = 0.003040  
+/layer3/layer3.0/downsample/downsample.0/Conv_output_0 : max = 2.042206        interval = 0.000997  
+/layer2/layer2.1/relu_1/Relu_output_0_splitncnn_1 : max = 9.469007        interval = 0.004624  
+/layer3/layer3.0/relu/Relu_output_0      : max = 6.452126        interval = 0.003150  
+/layer2/layer2.1/relu_1/Relu_output_0_splitncnn_0 : max = 9.469007        interval = 0.004624  
+/layer3/layer3.0/conv1/Conv_output_0     : max = 6.452126        interval = 0.003150  
+/layer3/layer3.0/Add_output_0            : max = 6.799663        interval = 0.003320  
+/layer3/layer3.0/relu_1/Relu_output_0_splitncnn_0 : max = 6.799663        interval = 0.003320  
+/layer3/layer3.1/conv2/Conv_output_0     : max = 5.630422        interval = 0.002749  
+/layer3/layer3.0/relu_1/Relu_output_0_splitncnn_1 : max = 6.799663        interval = 0.003320  
+/layer3/layer3.1/relu/Relu_output_0      : max = 3.548179        interval = 0.001733  
+/layer3/layer3.1/conv1/Conv_output_0     : max = 3.548179        interval = 0.001733  
+/layer3/layer3.1/Add_output_0            : max = 7.926418        interval = 0.003870  
+/layer4/layer4.0/conv2/Conv_output_0     : max = 4.409761        interval = 0.002153  
+/layer4/layer4.0/downsample/downsample.0/Conv_output_0 : max = 2.951379        interval = 0.001441  
+/layer3/layer3.1/relu_1/Relu_output_0_splitncnn_1 : max = 7.926418        interval = 0.003870  
+/layer4/layer4.0/relu/Relu_output_0      : max = 2.299483        interval = 0.001123  
+/layer3/layer3.1/relu_1/Relu_output_0_splitncnn_0 : max = 7.926418        interval = 0.003870  
+/layer4/layer4.0/conv1/Conv_output_0     : max = 2.299483        interval = 0.001123  
+/layer4/layer4.0/Add_output_0            : max = 5.330482        interval = 0.002603  
+/layer4/layer4.0/relu_1/Relu_output_0_splitncnn_0 : max = 5.330482        interval = 0.002603  
+/layer4/layer4.1/conv2/Conv_output_0     : max = 11.076204       interval = 0.005408  
+/layer4/layer4.0/relu_1/Relu_output_0_splitncnn_1 : max = 5.330482        interval = 0.002603  
+/layer4/layer4.1/relu/Relu_output_0      : max = 3.073434        interval = 0.001501  
+/layer4/layer4.1/conv1/Conv_output_0     : max = 3.073434        interval = 0.001501  
+/layer4/layer4.1/Add_output_0            : max = 12.578114       interval = 0.006142  
+/relu/Relu_output_0                      : max = 5.041811        interval = 0.002462  
+/conv1/Conv_output_0                     : max = 5.041811        interval = 0.002462  
+output0                                  : max = 5.121467        interval = 0.002501  
+/maxpool/MaxPool_output_0                : max = 5.041811        interval = 0.002462  
+/layer1/layer1.0/relu_1/Relu_output_0    : max = 5.109410        interval = 0.002495  
+/layer1/layer1.1/relu_1/Relu_output_0    : max = 6.679224        interval = 0.003261  
+/layer2/layer2.0/relu_1/Relu_output_0    : max = 7.236904        interval = 0.003534  
+/layer2/layer2.1/relu_1/Relu_output_0    : max = 9.469007        interval = 0.004624  
+/layer3/layer3.0/relu_1/Relu_output_0    : max = 6.799663        interval = 0.003320  
+/layer3/layer3.1/relu_1/Relu_output_0    : max = 7.926418        interval = 0.003870  
+/layer4/layer4.0/relu_1/Relu_output_0    : max = 5.330482        interval = 0.002603  
+    ====> step 3 : generate the histograms.
+    ====>          total_images : 24.
+    ====> step 4 : find the best threshold values.
+/layer4/layer4.1/relu_1/Relu_output_0    bin : 1839     threshold : 11.297578       interval : 0.006142   scale : 11.241347 
+input0                                   bin : 2035     threshold : 0.990014        interval : 0.000486   scale : 128.281006
+/Flatten_output_0                        bin : 1486     threshold : 2.688056        interval : 0.001808   scale : 47.246040 
+/maxpool/MaxPool_output_0_splitncnn_0    bin : 1624     threshold : 3.999229        interval : 0.002462   scale : 31.756117 
+/layer1/layer1.0/conv2/Conv_output_0     bin : 1643     threshold : 2.899575        interval : 0.001764   scale : 43.799526 
+/maxpool/MaxPool_output_0_splitncnn_1    bin : 1624     threshold : 3.999229        interval : 0.002462   scale : 31.756117 
+/layer1/layer1.0/relu/Relu_output_0      bin : 1742     threshold : 2.237446        interval : 0.001284   scale : 56.761139 
+/layer1/layer1.0/conv1/Conv_output_0     bin : 1626     threshold : 4.985842        interval : 0.003065   scale : 25.472128 
+/layer1/layer1.0/Add_output_0            bin : 1727     threshold : 4.309817        interval : 0.002495   scale : 29.467606 
+/layer1/layer1.0/relu_1/Relu_output_0_splitncnn_0 bin : 1732     threshold : 4.322292        interval : 0.002495   scale : 29.382561 
+/layer1/layer1.1/conv2/Conv_output_0     bin : 1798     threshold : 4.159939        interval : 0.002313   scale : 30.529295 
+/layer1/layer1.0/relu_1/Relu_output_0_splitncnn_1 bin : 1732     threshold : 4.322292        interval : 0.002495   scale : 29.382561 
+/layer1/layer1.1/relu/Relu_output_0      bin : 1501     threshold : 2.312823        interval : 0.001540   scale : 54.911247 
+/layer1/layer1.1/conv1/Conv_output_0     bin : 1761     threshold : 3.050484        interval : 0.001732   scale : 41.632740 
+/layer1/layer1.1/Add_output_0            bin : 1599     threshold : 5.216513        interval : 0.003261   scale : 24.345764 
+/layer2/layer2.0/conv2/Conv_output_0     bin : 1043     threshold : 3.173706        interval : 0.003041   scale : 40.016304 
+/layer2/layer2.0/downsample/downsample.0/Conv_output_0 bin : 1188     threshold : 2.600627        interval : 0.002188   scale : 48.834381 
+/layer1/layer1.1/relu_1/Relu_output_0_splitncnn_1 bin : 1649     threshold : 5.379580        interval : 0.003261   scale : 23.607790 
+/layer2/layer2.0/relu/Relu_output_0      bin : 1767     threshold : 2.629232        interval : 0.001488   scale : 48.303085 
+/layer1/layer1.1/relu_1/Relu_output_0_splitncnn_0 bin : 1649     threshold : 5.379580        interval : 0.003261   scale : 23.607790 
+/layer2/layer2.0/conv1/Conv_output_0     bin : 1827     threshold : 2.772857        interval : 0.001517   scale : 45.801128 
+/layer2/layer2.0/Add_output_0            bin : 1124     threshold : 3.973583        interval : 0.003534   scale : 31.961075 
+/layer2/layer2.0/relu_1/Relu_output_0_splitncnn_0 bin : 1124     threshold : 3.973583        interval : 0.003534   scale : 31.961075 
+/layer2/layer2.1/conv2/Conv_output_0     bin : 1185     threshold : 3.351509        interval : 0.002827   scale : 37.893379 
+/layer2/layer2.0/relu_1/Relu_output_0_splitncnn_1 bin : 1124     threshold : 3.973583        interval : 0.003534   scale : 31.961075 
+/layer2/layer2.1/relu/Relu_output_0      bin : 1356     threshold : 2.332220        interval : 0.001719   scale : 54.454559 
+/layer2/layer2.1/conv1/Conv_output_0     bin : 1615     threshold : 3.010702        interval : 0.001864   scale : 42.182854 
+/layer2/layer2.1/Add_output_0            bin : 1086     threshold : 5.023475        interval : 0.004624   scale : 25.281305 
+/layer3/layer3.0/conv2/Conv_output_0     bin : 1116     threshold : 3.394449        interval : 0.003040   scale : 37.414032 
+/layer3/layer3.0/downsample/downsample.0/Conv_output_0 bin : 1244     threshold : 1.240979        interval : 0.000997   scale : 102.338554
+/layer2/layer2.1/relu_1/Relu_output_0_splitncnn_1 bin : 1228     threshold : 5.680017        interval : 0.004624   scale : 22.359087 
+/layer3/layer3.0/relu/Relu_output_0      bin : 1110     threshold : 3.498577        interval : 0.003150   scale : 36.300476 
+/layer2/layer2.1/relu_1/Relu_output_0_splitncnn_0 bin : 1228     threshold : 5.680017        interval : 0.004624   scale : 22.359087 
+/layer3/layer3.0/conv1/Conv_output_0     bin : 1110     threshold : 3.498577        interval : 0.003150   scale : 36.300476 
+/layer3/layer3.0/Add_output_0            bin : 1417     threshold : 4.706309        interval : 0.003320   scale : 26.985052 
+/layer3/layer3.0/relu_1/Relu_output_0_splitncnn_0 bin : 1472     threshold : 4.888917        interval : 0.003320   scale : 25.977121 
+/layer3/layer3.1/conv2/Conv_output_0     bin : 1191     threshold : 3.275707        interval : 0.002749   scale : 38.770260 
+/layer3/layer3.0/relu_1/Relu_output_0_splitncnn_1 bin : 1472     threshold : 4.888917        interval : 0.003320   scale : 25.977121 
+/layer3/layer3.1/relu/Relu_output_0      bin : 1106     threshold : 1.917022        interval : 0.001733   scale : 66.248604 
+/layer3/layer3.1/conv1/Conv_output_0     bin : 1505     threshold : 2.608293        interval : 0.001733   scale : 48.690853 
+/layer3/layer3.1/Add_output_0            bin : 1028     threshold : 3.980626        interval : 0.003870   scale : 31.904533 
+/layer4/layer4.0/conv2/Conv_output_0     bin : 1811     threshold : 3.900529        interval : 0.002153   scale : 32.559689 
+/layer4/layer4.0/downsample/downsample.0/Conv_output_0 bin : 1691     threshold : 2.437626        interval : 0.001441   scale : 52.099869 
+/layer3/layer3.1/relu_1/Relu_output_0_splitncnn_1 bin : 1115     threshold : 4.317344        interval : 0.003870   scale : 29.416235 
+/layer4/layer4.0/relu/Relu_output_0      bin : 1934     threshold : 2.172046        interval : 0.001123   scale : 58.470226 
+/layer3/layer3.1/relu_1/Relu_output_0_splitncnn_0 bin : 1115     threshold : 4.317344        interval : 0.003870   scale : 29.416235 
+/layer4/layer4.0/conv1/Conv_output_0     bin : 1927     threshold : 2.164186        interval : 0.001123   scale : 58.682571 
+/layer4/layer4.0/Add_output_0            bin : 1708     threshold : 4.446840        interval : 0.002603   scale : 28.559608 
+/layer4/layer4.0/relu_1/Relu_output_0_splitncnn_0 bin : 1813     threshold : 4.720131        interval : 0.002603   scale : 26.906033 
+/layer4/layer4.1/conv2/Conv_output_0     bin : 1801     threshold : 9.743057        interval : 0.005408   scale : 13.034923 
+/layer4/layer4.0/relu_1/Relu_output_0_splitncnn_1 bin : 1813     threshold : 4.720131        interval : 0.002603   scale : 26.906033 
+/layer4/layer4.1/relu/Relu_output_0      bin : 1538     threshold : 2.308827        interval : 0.001501   scale : 55.006283 
+/layer4/layer4.1/conv1/Conv_output_0     bin : 1953     threshold : 2.931618        interval : 0.001501   scale : 43.320793 
+/layer4/layer4.1/Add_output_0            bin : 1804     threshold : 11.082620       interval : 0.006142   scale : 11.459385 
+/relu/Relu_output_0                      bin : 1245     threshold : 3.066199        interval : 0.002462   scale : 41.419357 
+/conv1/Conv_output_0                     bin : 543      threshold : 1.338000        interval : 0.002462   scale : 94.917778 
+output0                                  bin : 1674     threshold : 4.187449        interval : 0.002501   scale : 30.328728 
+/maxpool/MaxPool_output_0                bin : 1624     threshold : 3.999229        interval : 0.002462   scale : 31.756117 
+/layer1/layer1.0/relu_1/Relu_output_0    bin : 1732     threshold : 4.322292        interval : 0.002495   scale : 29.382561 
+/layer1/layer1.1/relu_1/Relu_output_0    bin : 1649     threshold : 5.379580        interval : 0.003261   scale : 23.607790 
+/layer2/layer2.0/relu_1/Relu_output_0    bin : 1124     threshold : 3.973583        interval : 0.003534   scale : 31.961075 
+/layer2/layer2.1/relu_1/Relu_output_0    bin : 1228     threshold : 5.680017        interval : 0.004624   scale : 22.359087 
+/layer3/layer3.0/relu_1/Relu_output_0    bin : 1472     threshold : 4.888917        interval : 0.003320   scale : 25.977121 
+/layer3/layer3.1/relu_1/Relu_output_0    bin : 1115     threshold : 4.317344        interval : 0.003870   scale : 29.416235 
+/layer4/layer4.0/relu_1/Relu_output_0    bin : 1813     threshold : 4.720131        interval : 0.002603   scale : 26.906033 
+====> Save the calibration table, done.
+
+Model Int8 calibration table is created successfully!
+>> end of calibration.
+--- Sipeed NN  v0.9.6 --- 
+quantize_input input0
+quantize_Split splitncnn_0
+quantize_Split splitncnn_1
+quantize_Split splitncnn_2
+quantize_Split splitncnn_3
+quantize_Split splitncnn_4
+quantize_Split splitncnn_5
+quantize_Split splitncnn_6
+quantize_Split splitncnn_7
+quantize_convolution /conv1/Conv
+quantize_convolution /layer1/layer1.0/conv1/Conv
+quantize_convolution /layer1/layer1.0/conv2/Conv
+quantize_convolution /layer1/layer1.1/conv1/Conv
+quantize_convolution /layer1/layer1.1/conv2/Conv
+quantize_convolution /layer2/layer2.0/conv1/Conv
+quantize_convolution /layer2/layer2.0/conv2/Conv
+quantize_convolution /layer2/layer2.0/downsample/downsample.0/Conv
+quantize_convolution /layer2/layer2.1/conv1/Conv
+quantize_convolution /layer2/layer2.1/conv2/Conv
+quantize_convolution /layer3/layer3.0/conv1/Conv
+quantize_convolution /layer3/layer3.0/conv2/Conv
+quantize_convolution /layer3/layer3.0/downsample/downsample.0/Conv
+quantize_convolution /layer3/layer3.1/conv1/Conv
+quantize_convolution /layer3/layer3.1/conv2/Conv
+quantize_convolution /layer4/layer4.0/conv1/Conv
+quantize_convolution /layer4/layer4.0/conv2/Conv
+quantize_convolution /layer4/layer4.0/downsample/downsample.0/Conv
+quantize_convolution /layer4/layer4.1/conv1/Conv
+quantize_convolution /layer4/layer4.1/conv2/Conv
+quantize_innerproduct /fc/Gemm
+quantize_relu /relu/Relu
+quantize_relu /layer1/layer1.0/relu/Relu
+quantize_relu /layer1/layer1.0/relu_1/Relu
+quantize_relu /layer1/layer1.1/relu/Relu
+quantize_relu /layer1/layer1.1/relu_1/Relu
+quantize_relu /layer2/layer2.0/relu/Relu
+quantize_relu /layer2/layer2.0/relu_1/Relu
+quantize_relu /layer2/layer2.1/relu/Relu
+quantize_relu /layer2/layer2.1/relu_1/Relu
+quantize_relu /layer3/layer3.0/relu/Relu
+quantize_relu /layer3/layer3.0/relu_1/Relu
+quantize_relu /layer3/layer3.1/relu/Relu
+quantize_relu /layer3/layer3.1/relu_1/Relu
+quantize_relu /layer4/layer4.0/relu/Relu
+quantize_relu /layer4/layer4.0/relu_1/Relu
+quantize_relu /layer4/layer4.1/relu/Relu
+quantize_relu /layer4/layer4.1/relu_1/Relu
+quantize_eltwise /layer1/layer1.0/Add
+quantize_eltwise /layer1/layer1.1/Add
+quantize_eltwise /layer2/layer2.0/Add
+quantize_eltwise /layer2/layer2.1/Add
+quantize_eltwise /layer3/layer3.0/Add
+quantize_eltwise /layer3/layer3.1/Add
+quantize_eltwise /layer4/layer4.0/Add
+quantize_eltwise /layer4/layer4.1/Add
+quantize_pool /maxpool/MaxPool
+quantize_pool /avgpool/GlobalAveragePool
+>> end of quantization.
